@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>View Expenses</h1>
+{% if expenses %}
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Item</th>
+        <th>Amount</th>
+        <th>Category</th>
+        <th>Date Added</th>
+        <th>Action</th>
+    </tr>
+    {% for expense in expenses %}
+    <tr>
+        <td>{{ expense.id }}</td>
+        <td>{{ expense.item }}</td>
+        <td>{{ expense.amount }}</td>
+        <td>{{ expense.category }}</td>
+        <td>{{ expense.date_added.strftime('%Y-%m-%d %H:%M') }}</td>
+        <td>
+            <form method="post" action="{{ url_for('delete_expense', id=expense.id) }}">
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>No expenses recorded yet.</p>
+{% endif %}
+{% endblock %}

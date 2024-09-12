@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #f7f7f7;
+    color: #111111;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav.options {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+nav.options button {
+    background-color: #9cf8edd5;
+    color: #0b0b0b;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+nav.options button:hover {
+    background-color: #a7ccf1 ;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.summary, section.list {
+    width: 45%;
+    background-color: #efe8ef;
+    padding: 20px;
+    border: 1px solid #9bdddd;
+}
+
+section.summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+section.summary li {
+    padding: 5px 0;
+}
+
+
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        
+        <header>
+            <h1>Expense Tracker</h1>
+        </header>
+
+        <nav class="options">
+            <button>Table for Expense List</button>
+            <button>Graph</button>
+            <button>Settings</button>
+        </nav>
+
+        <main>
+            <section class="summary">
+                <h2>Total Expense Calculation</h2>
+                <ul>
+                    <li>Daily</li>
+                    <li>Weekly</li>
+                    <li>Monthly</li>
+                    <li>Yearly</li>
+                </ul>
+            </section>
+            <section class="list">
+                <h2,>Expense List</h2>
+               
+            </section>
+        </main>
+
+        
+    </div>
+</body>
+</html>
