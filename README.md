@@ -1,4 +1,4 @@
-# **Expense Tracker**
+# **Expense - Tracker**
 
 The Expense Tracker is an advanced financial management tool designed to efficiently track and analyze user expenses. Built with a robust backend powered by Flask and integrated with an SQL database, this application allows users to log their daily, weekly, monthly, and yearly expenses.
 
